@@ -16,7 +16,7 @@ operators:
     subscription:
       channel: tech-preview-latest-all-namespaces
       installPlanApproval: Automatic
-      name: codeready-workspaces2
+      operatorName: codeready-workspaces2
       source: redhat-operators
       sourceNamespace: openshift-marketplace
       startingCSV: crwoperatorallnamespaces.v2.12.101
