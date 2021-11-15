@@ -47,6 +47,18 @@ operators:
     operatorgroup:
       create: false
 
+  - name: argocd-operator
+    namespace: openshift-operators
+    subscription:
+      channel: alpha
+      approval: Automatic
+      operatorName: argocd-operator
+      sourceName: community-operators
+      sourceNamespace: openshift-marketplace
+      csv: argocd-operator.v0.0.15
+    operatorgroup:
+      create: false      
+
   - name: elasticsearch-operator
     namespace: openshift-operators-redhat
     subscription:
